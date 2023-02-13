@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HarborS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style_sample.css">
+  <script src="./assets/js/script_sample.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="inner header__inner">
+      <h1 class="header__logo"><img src="./assets/img/logo.svg" alt="HarborS"></h1>
+      <nav class="header__nav">
+        <ul class="header__nav__list">
+          <li class="header__nav__item">
+            <a href="#service" class="header__nav__item__link">Service</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#news" class="header__nav__item__link">News</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#contact" class="header__nav__item__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- /.header -->
+  <main class="container">
+    <div class="hero">
+      <div class="hero__lead">
+        <span class="hero__lead__inline hero__lead__inline">HarborS</span>
+        ハーバーズ表参道
+      </div>
+    </div>
+    <!-- /.hero -->
+    <section id="service" class="section service">
+      <div class="inner inner--small">
+        <h2 class="title">Service</h2>
+        <div class="service__inner">
+          <div class="service__tab" role="tablist">
+            <button class="service__tab__button" role="tab" aria-controls="panel1" aria-selected="true">コワーキングスペース</button>
+            <button class="service__tab__button" role="tab" aria-controls="panel2" aria-selected="false">バーチャルオフィス</button>
+            <button class="service__tab__button" role="tab" aria-controls="panel3" aria-selected="false">レンタルスペース</button>
+          </div>
+          <div class="service__panel">
+            <div id="panel1" role="tabpanel" class="service__panel__item">
+              <h3 class="service__panel__item__title">エンジニア特化型コワーキングスペース</h3>
+              <p class="service__panel__item__text">エンジニアのためのコワーキングスペースです。勉強会やイベントを定期的に開催しており、コミュニティマネージャーが、エンジニア同士の交流促進を支援します。高速Wi-Fiや豊富な技術書やディスプレイのレンタルも提供しております。</p>
+            </div>
+            <div id="panel2" role="tabpanel" class="service__panel__item" hidden>
+              <h3 class="service__panel__item__title">バーチャルオフィス</h3>
+              <p class="service__panel__item__text">港区を拠点とするあらゆる業種の事業をサポートするバーチャルオフィスです。“港区南青山”のブランド力のある住所をご利用頂けます。会社設立の際には、本店所在地として法人登記も可能です。</p>
+            </div>
+            <div id="panel3" role="tabpanel" class="service__panel__item" hidden>
+              <h3 class="service__panel__item__title">レンタルスペース</h3>
+              <p class="service__panel__item__text">ミーティングや商談、セミナーなどあらゆる利用シーンに適した会議室をご利用頂けます。貸切オープンテラスでは、BBQやプライベートパーティなどのイベントを眺望抜群のロケーションでご利用頂けます。撮影用途でのご利用もご相談ください。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /#service.section -->
+
+    <section id="news" class="section news">
+      <div class="inner">
+        <h2 class="title">News</h2>
+        <div class="news__inner">
+          <article class="news__card">
+            <a href="#" class="news__card__link">
+              <figure class="news__card__image">
+                <img src="./assets/img/img-news01.jpg" alt="">
+              </figure>
+              <div class="news__card__content">
+                <time class="news__card__content__time">2021.05.16</time>
+                <p class="news__card__content__text">TRAVEL WORK AWARD 2021【コワーキングスペース部門】金賞受賞しました！</p>
+              </div>
+            </a>
+          </article>
+          <article class="news__card">
+            <a href="#" class="news__card__link">
+              <figure class="news__card__image">
+                <img src="./assets/img/img-news02.jpg" alt="">
+              </figure>
+              <div class="news__card__content">
+                <time class="news__card__content__time">2020.03.31</time>
+                <p class="news__card__content__text">エンジニアコミュニティ「HarborS」で、東京フリーランスが「30DAYSブートキャンプ」を開催！</p>
+              </div>
+            </a>
+          </article>
+          <article class="news__card">
+            <a href="#" class="news__card__link">
+              <figure class="news__card__image">
+                <img src="./assets/img/img-news03.jpg" alt="">
+              </figure>
+              <div class="news__card__content">
+                <time class="news__card__content__time">2020.02.29</time>
+                <p class="news__card__content__text">株式会社アンチパターンがエンジニア特化型コワーキング事業「HarborS」をリリース。第一弾として表参道拠点をオープン！</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- /#news.section -->
+
+    <section id="contact" class="section contact">
+      <div class="inner inner--small">
+        <h2 class="title">Contact</h2>
+        <form action="/" name="contactForm" class="contact__form">
+          <dl class="contact__form__list">
+            <div class="contact__form__item">
+              <dt><label for="title">ご用件</label></dt>
+              <dd>
+                <div class="contact__form__item__select">
+                  <select id="title" name="title">
+                    <option value="選択してください" selected disabled>選択してください</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </div>
+              </dd>
+            </div>
+            <div class="contact__form__item">
+              <dt><label for="name">お名前</label></dt>
+              <dd><input id="name" type="text" name="name"></dd>
+            </div>
+            <div class="contact__form__item">
+              <dt><label for="tel">電話番号</label></dt>
+              <dd><input id="tel" type="text" name="tel"></dd>
+            </div>
+            <div class="contact__form__item">
+              <dt><label for="email">メールアドレス</label></dt>
+              <dd><input id="email" type="email" name="email"></dd>
+            </div>
+            <div class="contact__form__item">
+              <dt>性別</dt>
+              <dd>
+                <label><input type="radio" name="sex" value="男性">男性</label>
+                <label><input type="radio" name="sex" value="女性">女性</label>
+              </dd>
+            </div>
+            <div class="contact__form__item">
+              <dt>職業</dt>
+              <dd>
+                <label><input type="checkbox" name="job" value="学生">学生</label>
+                <label><input type="checkbox" name="job" value="社会人">社会人</label>
+              </dd>
+            </div>
+            <div class="contact__form__item">
+              <dt><label for="content">お問い合わせ内容</label></dt>
+              <dd><textarea id="content" type="text" name="content"></textarea></dd>
+            </div>
+          </dl>
+          <div class="contact__form__footer">
+            <button class="contact__form__button">送信する</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- /#contact.section -->
+  </main>
+  <!-- /.container -->
+  <footer class="footer">
+    <small lang="en">©︎ anti-pattern.inc</small>
+  </footer>
+  <!-- /.footer -->
+</body>
+</html>
