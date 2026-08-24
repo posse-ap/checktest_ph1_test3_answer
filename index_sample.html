@@ -12,8 +12,6 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      // 仕様書のカラーとフォントを、そのままクラス名で使えるようにしてあります。
-      //   text-ink / bg-paper / text-sub / bg-brand … など
       tailwind.config = {
         theme: {
           extend: {
@@ -30,35 +28,39 @@
       };
     </script>
   </head>
-  <body class="font-sans text-ink">
-    <!-- ==========================================================
-         Bean Route（PH1 第3回チェックテスト）
+  <body class="pt-16 font-sans text-ink">
+    <!-- ヘッダー -->
+    <header class="fixed left-0 top-0 z-50 h-16 w-full bg-white shadow-sm">
+      <div
+        class="mx-auto flex h-full max-w-content items-center justify-between px-5"
+      >
+        <a href="#" class="text-xl font-bold tracking-wide">
+          Bean<span class="text-brand">Route</span>
+        </a>
+        <nav class="hidden md:block">
+          <ul class="flex items-center gap-6 text-sm font-medium">
+            <li><a href="#cafe" class="hover:text-brand">カフェを探す</a></li>
+            <li><a href="#about" class="hover:text-brand">このサイトについて</a></li>
+            <li><a href="#contact" class="hover:text-brand">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-         ■ 必ず VSCode の Live Server で開いてください
-           このファイルをダブルクリックして開くと data.json を読み込めません。
-           VSCode の右下「Go Live」から開いてください。
+    <!-- メインビジュアル -->
+    <section
+      class="flex h-[400px] items-center justify-center bg-cover bg-center text-center"
+      style="background-image: url('./images/hero.jpg')"
+    >
+      <div class="px-5">
+        <h1 class="text-3xl font-bold text-white md:text-4xl">Bean Route</h1>
+        <p class="mt-4 text-sm text-white md:text-base">
+          自家焙煎からスペシャルティまで、いま行きたい9軒
+        </p>
+      </div>
+    </section>
 
-         ■ デザインと仕様書はFigmaにあります
-           https://www.figma.com/design/pamOd8ehnMa1bfpVjw1Yvw/?node-id=0-1
-           左が仕様書、右がデザインです。指定はすべて仕様書に書いてあります。
-
-         ■ 制限時間45分。AIを使ってかまいません。
-           時間内に全部は終わらない量です。できたところまでで提出してください。
-         ========================================================== -->
-
-    <!-- ==========================================================
-         ヘッダー：ここに書いてください
-         ========================================================== -->
-
-    <!-- ==========================================================
-         メインビジュアル：ここに書いてください
-         背景画像は ./images/hero.jpg です
-         ========================================================== -->
-
-    <!-- ==========================================================
-         カフェ一覧：見出しとタブは用意してあります。
-         カード（#cafe-list の中身）は script.js から作ってください。
-         ========================================================== -->
+    <!-- カフェ一覧 -->
     <section id="cafe" class="bg-paper py-16 md:py-20">
       <div class="mx-auto max-w-content px-5">
         <h2 class="text-center text-2xl font-bold md:text-3xl">CAFE LIST</h2>
@@ -72,7 +74,7 @@
             <button
               type="button"
               data-category="all"
-              class="rounded-full border border-sub px-5 py-2 text-sm"
+              class="rounded-full border border-sub px-5 py-2 text-sm hover:border-brand hover:text-brand"
             >
               すべて
             </button>
@@ -81,7 +83,7 @@
             <button
               type="button"
               data-category="specialty"
-              class="rounded-full border border-sub px-5 py-2 text-sm"
+              class="rounded-full border border-sub px-5 py-2 text-sm hover:border-brand hover:text-brand"
             >
               スペシャルティ
             </button>
@@ -90,7 +92,7 @@
             <button
               type="button"
               data-category="roast"
-              class="rounded-full border border-sub px-5 py-2 text-sm"
+              class="rounded-full border border-sub px-5 py-2 text-sm hover:border-brand hover:text-brand"
             >
               自家焙煎
             </button>
@@ -99,21 +101,21 @@
             <button
               type="button"
               data-category="sweets"
-              class="rounded-full border border-sub px-5 py-2 text-sm"
+              class="rounded-full border border-sub px-5 py-2 text-sm hover:border-brand hover:text-brand"
             >
               スイーツ自慢
             </button>
           </li>
         </ul>
 
-        <!-- カードはこの中に作る。この ul のクラスも自分で決めてよい -->
-        <ul id="cafe-list" class="mt-10"></ul>
+        <ul
+          id="cafe-list"
+          class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8"
+        ></ul>
       </div>
     </section>
 
-    <!-- ==========================================================
-         このサイトについて：完成済み。触らなくてよい
-         ========================================================== -->
+    <!-- このサイトについて -->
     <section id="about" class="py-16 md:py-20">
       <div class="mx-auto max-w-content px-5 text-center">
         <h2 class="text-2xl font-bold md:text-3xl">ABOUT</h2>
@@ -124,9 +126,7 @@
       </div>
     </section>
 
-    <!-- ==========================================================
-         お問い合わせ：HTMLは完成済み。動きだけ script.js に書いてください
-         ========================================================== -->
+    <!-- お問い合わせ -->
     <section id="contact" class="bg-paper py-16 md:py-20">
       <div class="mx-auto max-w-content px-5">
         <h2 class="text-center text-2xl font-bold md:text-3xl">CONTACT</h2>
@@ -146,7 +146,6 @@
               class="w-full rounded border border-sub bg-white px-4 py-3 text-sm outline-none focus:border-brand"
               placeholder="POSSE 太郎"
             />
-            <!-- エラーメッセージはこの中に入れる -->
             <p id="name-error" class="mt-2 text-sm text-red-600"></p>
           </div>
 
@@ -201,14 +200,12 @@
       </div>
     </section>
 
-    <!-- ==========================================================
-         フッター：完成済み。触らなくてよい
-         ========================================================== -->
+    <!-- フッター -->
     <footer class="bg-ink py-10 text-center text-white">
       <p class="text-lg font-bold">Bean<span class="text-brand">Route</span></p>
       <p class="mt-3 text-xs text-sub">© 2026 Bean Route</p>
     </footer>
 
-    <script src="./script.js" defer></script>
+    <script src="./script_sample.js" defer></script>
   </body>
 </html>
