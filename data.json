@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "ROASTERY NAKAME",
+    "area": "東京都目黒区中目黒 2-14-5",
+    "category": "roast",
+    "categoryLabel": "自家焙煎",
+    "description": "店の奥で毎朝焙煎する。浅煎りから深煎りまで常時8種類、その日の生豆の状態で焙煎度を変えている。",
+    "hours": "8:00 - 19:00",
+    "image": "./images/cafe-01.jpg"
+  },
+  {
+    "id": 2,
+    "name": "BLUE HILL COFFEE",
+    "area": "東京都世田谷区三軒茶屋 1-8-2",
+    "category": "specialty",
+    "categoryLabel": "スペシャルティ",
+    "description": "エチオピア・イルガチェフェを中心に、単一農園の豆だけを扱う。ハンドドリップは1杯ずつ抽出。",
+    "hours": "9:00 - 20:00",
+    "image": "./images/cafe-02.jpg"
+  },
+  {
+    "id": 3,
+    "name": "喫茶 とおり道",
+    "area": "東京都杉並区高円寺南 3-2-11",
+    "category": "sweets",
+    "categoryLabel": "スイーツ自慢",
+    "description": "自家製プリンとレモンケーキが看板。コーヒーは深煎りのブレンドのみ、甘いものに合わせて設計している。",
+    "hours": "11:00 - 18:00",
+    "image": "./images/cafe-03.jpg"
+  },
+  {
+    "id": 4,
+    "name": "KIYOSUMI BEANS",
+    "area": "東京都江東区清澄 1-3-9",
+    "category": "specialty",
+    "categoryLabel": "スペシャルティ",
+    "description": "産地と農園名をすべて開示。カッピングスコア84点以上の豆だけを仕入れ、味の違いを飲み比べできる。",
+    "hours": "8:30 - 18:00",
+    "image": "./images/cafe-04.jpg"
+  },
+  {
+    "id": 5,
+    "name": "焙煎所 ひとつぶ",
+    "area": "東京都台東区谷中 3-7-4",
+    "category": "roast",
+    "categoryLabel": "自家焙煎",
+    "description": "1回500gの少量焙煎。売り切れたらその日は終わり。豆の販売が中心で、店内の席は4つだけ。",
+    "hours": "10:00 - 17:00",
+    "image": "./images/cafe-05.jpg"
+  },
+  {
+    "id": 6,
+    "name": "CAFE MERIDIAN",
+    "area": "東京都渋谷区神宮前 5-11-3",
+    "category": "sweets",
+    "categoryLabel": "スイーツ自慢",
+    "description": "季節のフルーツタルトが週替わりで登場する。カフェラテはミルクの温度を62度に固定している。",
+    "hours": "10:00 - 21:00",
+    "image": "./images/cafe-06.jpg"
+  },
+  {
+    "id": 7,
+    "name": "NORTH PIER COFFEE",
+    "area": "神奈川県横浜市中区海岸通 4-23",
+    "category": "specialty",
+    "categoryLabel": "スペシャルティ",
+    "description": "港沿いの倉庫を改装した店舗。中南米の豆を浅めに焼き、果実感の強い一杯に仕上げている。",
+    "hours": "9:00 - 19:00",
+    "image": "./images/cafe-07.jpg"
+  },
+  {
+    "id": 8,
+    "name": "煎り豆屋 かねまる",
+    "area": "埼玉県さいたま市浦和区高砂 2-5-1",
+    "category": "roast",
+    "categoryLabel": "自家焙煎",
+    "description": "創業48年。直火式の焙煎機を今も使い続けている。看板の深煎りブレンドは開業当時から変えていない。",
+    "hours": "7:30 - 18:30",
+    "image": "./images/cafe-08.jpg"
+  },
+  {
+    "id": 9,
+    "name": "SUNDAY BAKE & COFFEE",
+    "area": "千葉県船橋市本町 6-2-8",
+    "category": "sweets",
+    "categoryLabel": "スイーツ自慢",
+    "description": "毎朝焼くスコーンとシナモンロールが並ぶ。焼き上がりの11時と15時に合わせて来る常連が多い。",
+    "hours": "8:00 - 17:00",
+    "image": "./images/cafe-09.jpg"
+  }
+]
