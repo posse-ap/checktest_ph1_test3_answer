@@ -12,4 +12,4 @@ https://posse-ap.github.io/checktest_ph1_test3_answer/
 # 問題文
 
 以下のFigmaにデザインと仕様書があります
-https://www.figma.com/design/z5b14O1VMKaVijJokzyUMq/?node-id=2-2
+https://www.figma.com/design/pamOd8ehnMa1bfpVjw1Yvw/?node-id=0-1
